@@ -10,23 +10,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      newData: [],
-      stringData:'',
-      randomData: [],
       data:{},
       changeData: true,
-      socket: null,
-      dataNumberYaw:2,
-      dataNumberVolt:7,
-      dataNumberPress:8,
-      dataNumberAlt:9
+      socket: null
     };
   }
 
   socketObserver = ({ socket }) => {
     useEffect(() => {
       if (socket) return;
-      const socketio = io('https://backend-gmat-dummy.herokuapp.com/');
+      //const socketio = io('http://13.113.187.150:5001');
+      const socketio = io('https://gmat-backend.herokuapp.com/')
       console.log('connected');
 
       this.setState({ socket:socketio });
