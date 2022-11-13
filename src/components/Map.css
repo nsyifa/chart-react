@@ -1,0 +1,36 @@
+.map {
+        height: 450px;
+        background-color: white;
+        width: 48%;
+        padding: 1rem;
+        padding-bottom: 10px;
+        padding-top:5px;
+        border-radius: 20px;
+        box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size:20px;
+}
+
+.labels{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+p.display{
+  font-size:17px;
+}
+  
+.map .leaflet-container {
+    height: 80%;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 8px;
+  }
+.leaflet-div-icon {
+    background: transparent;
+    border: none;
+}  
