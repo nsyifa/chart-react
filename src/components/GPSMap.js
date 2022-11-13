@@ -38,7 +38,7 @@ export default class GPSMap extends React.Component{
                     <p>GPS</p>
                     <p className="display">LAT:{this.state.center[0]} | LONG:{this.state.center[1]}</p>
                 </div>
-                <MapContainer center={[51.505, -0.09]} zoom={4} scrollWheelZoom={true}>
+                <MapContainer center={[51.505, -0.09]} zoom={25} scrollWheelZoom={true}>
                     <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
