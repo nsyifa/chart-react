@@ -26,7 +26,7 @@ class App extends React.Component {
   socketObserver = ({ socket }) => {
     useEffect(() => {
       if (socket) return;
-      const socketio = io('http://13.113.187.150:5001');
+      const socketio = io('https://backend-gmat-dummy.herokuapp.com/');
       console.log('connected');
 
       this.setState({ socket:socketio });
